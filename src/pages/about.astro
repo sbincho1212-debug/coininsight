@@ -1,0 +1,106 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="ko">
+	<head>
+		<BaseHead title={`About | ${SITE_TITLE}`} description="Coin Insight 블로그 소개" />
+		<style>
+			main {
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 3rem 1rem;
+			}
+			h1 {
+				font-size: 2.5rem;
+				margin-bottom: 2rem;
+				color: rgb(var(--white));
+				text-align: center;
+			}
+			.content {
+				line-height: 1.8;
+				font-size: 1.1rem;
+			}
+			.content p {
+				margin-bottom: 1.5rem;
+				color: rgba(var(--white), 0.9);
+			}
+			.image-section {
+				margin: 3rem 0;
+				text-align: center;
+			}
+			.image-section img {
+				width: 100%;
+				max-width: 700px;
+				height: auto;
+				border-radius: 12px;
+				box-shadow: 0 8px 24px rgba(247, 147, 26, 0.2);
+				margin-bottom: 1rem;
+			}
+			.highlight {
+				color: var(--accent);
+				font-weight: bold;
+			}
+			.intro-box {
+				background: rgba(255, 255, 255, 0.05);
+				border-left: 4px solid var(--accent);
+				padding: 1.5rem;
+				margin: 2rem 0;
+				border-radius: 8px;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>🪙 About Coin Insight</h1>
+
+			<div class="content">
+				<div class="intro-box">
+					<p>
+						<strong>Coin Insight</strong>는 암호화폐와 블록체인 기술을 처음 접하는 분들을 위한 블로그입니다.
+						어려운 용어와 복잡한 개념들을 쉽고 친근하게 풀어내어, 누구나 이해할 수 있는 콘텐츠를 제공합니다.
+					</p>
+				</div>
+
+				<p>
+					블록체인 기술은 우리의 미래를 바꿀 혁신적인 기술입니다.
+					하지만 처음 접하면 너무 어렵고 복잡하게 느껴지죠.
+					저 역시 평범한 직장인으로서 퇴근 후 하나씩 공부하며 배워가고 있습니다.
+				</p>
+
+				<div class="image-section">
+					<img
+						src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&q=80"
+						alt="Bitcoin and cryptocurrency"
+					/>
+				</div>
+
+				<p>
+					이 블로그에서는 <span class="highlight">비트코인, 이더리움</span> 같은 주요 암호화폐부터
+					<span class="highlight">DeFi, NFT, 스마트 컨트랙트</span> 같은 최신 트렌드까지
+					다양한 주제를 다룹니다. 복잡한 기술 용어는 쉬운 말로 풀어내고,
+					실제 사례와 함께 설명하여 실생활에서 어떻게 활용되는지 알려드립니다.
+				</p>
+
+				<div class="image-section">
+					<img
+						src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=1200&q=80"
+						alt="Blockchain technology"
+					/>
+				</div>
+
+				<p>
+					함께 공부하고 성장하는 커뮤니티를 만들어가고 싶습니다.
+					궁금한 점이나 다뤄줬으면 하는 주제가 있다면 언제든 편하게 의견을 남겨주세요.
+					우리 모두 암호화폐와 블록체인의 세계를 재미있게 탐험해봅시다! 🚀
+				</p>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

@@ -1,0 +1,50 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				text-align: center;
+				padding: 4rem 1rem;
+			}
+			h1 {
+				font-size: 3rem;
+				margin-bottom: 2rem;
+				color: rgb(var(--white));
+			}
+			.hero-image {
+				max-width: 600px;
+				width: 100%;
+				height: auto;
+				margin: 2rem auto;
+				border-radius: 12px;
+				box-shadow: 0 8px 24px rgba(247, 147, 26, 0.2);
+			}
+			.subtitle {
+				font-size: 1.3rem;
+				color: rgba(var(--white), 0.9);
+				margin-top: 2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>🪙 Coin Insight</h1>
+			<img
+				src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?w=1200&q=80"
+				alt="Blockchain cubes"
+				class="hero-image"
+			/>
+			<p class="subtitle">코인과 블록체인을 처음부터 공부하는 직딩 😊</p>
+		</main>
+		<Footer />
+	</body>
+</html>
