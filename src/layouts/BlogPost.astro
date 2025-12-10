@@ -78,6 +78,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 						<hr />
 					</div>
 					<slot />
+
+					<!-- 쿠팡 파트너스 광고 -->
+					<div style="margin: 2em 0; text-align: center;">
+						<script src="https://ads-partners.coupang.com/g.js" is:inline></script>
+						<script is:inline>
+							new PartnersCoupang.G({"id":949517,"template":"carousel","trackingCode":"AF4075514","width":"680","height":"140","tsource":""});
+						</script>
+					</div>
 				</div>
 			</article>
 		</main>
