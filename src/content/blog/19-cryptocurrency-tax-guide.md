@@ -2,7 +2,7 @@
 title: "19) 암호화폐 세금 완벽 정리 - 2025년 과세 제도 총정리"
 description: "암호화폐로 번 돈, 세금 내야 할까요? 2025년부터 시행되는 가상자산 과세 제도를 완벽 정리! 과세 기준, 세율, 신고 방법부터 합법적인 절세 전략까지. 세금 폭탄 피하는 법!"
 pubDate: 2025-12-10T01:00:00
-heroImage: "https://images.unsplash.com/photo-1554224311-beee460201f9?w=1200&q=80"
+heroImage: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80"
 ---
 
 암호화폐로 수익을 내고 나면 이런 생각이 듭니다.
