@@ -116,9 +116,13 @@ pre {
 	padding: 1.5em;
 	border-radius: 8px;
 	background-color: rgb(var(--gray-light));
+	overflow-x: auto;
+	max-width: 100%;
 }
 pre > code {
 	all: unset;
+	word-wrap: normal;
+	white-space: pre;
 }
 blockquote {
 	border-left: 4px solid var(--accent);
@@ -132,10 +136,34 @@ hr {
 }
 @media (max-width: 720px) {
 	body {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	main {
 		padding: 1em;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+	h3 {
+		font-size: 1.25em;
+	}
+	pre {
+		padding: 1em;
+		font-size: 14px;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	code {
+		font-size: 14px;
+		word-break: break-word;
+	}
+	table {
+		display: block;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
 	}
 }
 
